@@ -1,4 +1,4 @@
 # CursoJavaSantisimaTrinidad
 Curso de java de santisima trinidad en el que estoy inscripto
-![ScreenShot](https://imgur.com/Rubiooi)
-![ScreenShot](https://imgur.com/tF6sQ76)
+![ScreenShot](https://i.imgur.com/Rubiooi.jpg)<br/>
+![ScreenShot](https://i.imgur.com/tF6sQ76.jpg)
