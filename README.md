@@ -1,4 +1,4 @@
 # CursoJavaSantisimaTrinidad
-Curso de java de santisima trinidad en el que estoy inscripto
+Ejercicios sencillos de calculos de areas de triangulos!
 ![ScreenShot](https://i.imgur.com/Rubiooi.jpg)<br/>
 ![ScreenShot](https://i.imgur.com/tF6sQ76.jpg)
