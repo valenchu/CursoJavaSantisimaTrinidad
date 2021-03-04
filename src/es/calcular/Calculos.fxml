@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.calcular.ControllerCalculator">
+   <children>
+      <TextArea fx:id="txtArea" cache="true" editable="false" layoutX="17.0" layoutY="167.0" prefHeight="99.0" prefWidth="563.0">
+         <effect>
+            <Blend />
+         </effect>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextArea>
+      <TextField fx:id="txtBase" layoutX="97.0" layoutY="41.0">
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtAltura" layoutX="97.0" layoutY="101.0">
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <Label layoutX="121.0" layoutY="21.0" prefHeight="19.0" prefWidth="50.0" text="Base">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="81.0" prefHeight="19.0" prefWidth="50.0" text="Altura">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCalcularArea" layoutX="463.0" layoutY="66.0" mnemonicParsing="false" onAction="#click" text="Calcular area" />
+      <Label fx:id="radioBt" layoutX="266.0" layoutY="21.0" prefHeight="19.0" prefWidth="307.0" />
+   </children>
+</Pane>
