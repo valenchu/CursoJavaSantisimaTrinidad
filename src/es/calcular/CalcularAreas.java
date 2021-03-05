@@ -64,4 +64,12 @@ public class CalcularAreas {
 		int area = b*a/2;
 		return area;
 	}
+	public Float calcularAreaTFloat() {
+		Float area = bas*alt;
+		return area;
+		}
+	public Float calcularAreaTandRFloat() {
+		Float area = bas*alt/2f;
+		return area;
+	}
 }

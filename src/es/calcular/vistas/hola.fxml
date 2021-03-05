@@ -5,7 +5,6 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.Pane?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.calcular.Controller">
    <children>
       <RadioButton fx:id="rdTriangulo1" layoutX="33.0" layoutY="46.0" mnemonicParsing="false" selected="true" text="Calcular area triangulo">
@@ -13,7 +12,9 @@
             <ToggleGroup fx:id="tg" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="rdTriangulo2" layoutX="33.0" layoutY="96.0" mnemonicParsing="false" text="Calcular triangulo rectangulo" toggleGroup="$tg" />
+      <RadioButton fx:id="rdTriangulo2" layoutX="33.0" layoutY="96.0" mnemonicParsing="false" text="Calcular area triangulo rectangulo" toggleGroup="$tg" />
       <Button fx:id="btnCalcular" layoutX="51.0" layoutY="348.0" mnemonicParsing="false" onAction="#click" text="Calcular" />
+      <RadioButton fx:id="rdTrianguloFloat1" layoutX="33.0" layoutY="145.0" mnemonicParsing="false" text="Calcular area triangulo float" toggleGroup="$tg" />
+      <RadioButton fx:id="rdTrianguloFloat2" layoutX="33.0" layoutY="190.0" mnemonicParsing="false" text="Calcular area triangulo rectangulo float" toggleGroup="$tg" />
    </children>
 </Pane>

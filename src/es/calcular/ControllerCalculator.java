@@ -1,5 +1,7 @@
 package es.calcular;
 
+
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -31,17 +33,11 @@ public class ControllerCalculator {
 
 	@FXML
 	void click(ActionEvent event) {
-		int b = Integer.parseInt(txtBase.getText());
-		int a = Integer.parseInt(txtAltura.getText());
-		System.out.println(a + "   " + b);
-		if (radioBt.getText().equals("CalcularAreaTrianguloInt")) {
-			CalcularAreas cal = new CalcularAreas(b, a);
-			txtArea.setText("El area del triangulo es: " + cal.calcularAreaTInt());
-		} else if (radioBt.getText().equals("CalcularAreaTrianguloRectanguloInt")) {
-			CalcularAreas cal = new CalcularAreas(b, a);
-			txtArea.setText("El area del triangulo rectangulo es: " + cal.calcularAreaTandRInt());
-		}
-
+		VerificacionesAreas veri = new VerificacionesAreas();
+		
+		veri.respAreas(radioBt, txtBase, txtAltura, txtArea);
+		System.out.println("holi");
+		
 	}
 
 	public void getRadion(String datoArea) {

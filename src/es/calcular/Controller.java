@@ -21,20 +21,26 @@ public class Controller {
 	}
 
 	@FXML
-	public RadioButton rdTriangulo1;
-
-	@FXML
 	private ToggleGroup tg;
 
 	@FXML
+	public RadioButton rdTriangulo1;
+
+	@FXML
 	public RadioButton rdTriangulo2;
+
+	@FXML
+	private RadioButton rdTrianguloFloat1;
+
+	@FXML
+	private RadioButton rdTrianguloFloat2;
 
 	@FXML
 	private Button btnCalcular;
 
 	@FXML
 	void click(ActionEvent event) {
-		FXMLLoader f = new FXMLLoader(getClass().getResource("Calculos.fxml"));
+		FXMLLoader f = new FXMLLoader(getClass().getResource("\\vistas\\Calculos.fxml"));
 		Parent root;
 		try {
 			root = f.load();
@@ -45,6 +51,14 @@ public class Controller {
 				cs.getRadion("CalcularAreaTrianguloInt");
 			else if (rdTriangulo2.isSelected() == true)
 				cs.getRadion("CalcularAreaTrianguloRectanguloInt");
+			else if (rdTrianguloFloat1.isSelected() == true)
+				cs.getRadion("CalcularAreaTrianguloFloat");
+			else if (rdTrianguloFloat2.isSelected() == true)
+				cs.getRadion("CalcularAreaTrianguloRectanguloFloat");
+			/*else if (rdTrianguloDouble1.isSelected() == true)
+				cs.getRadion("CalcularAreaTrianguloDouble");
+			else if (rdTrianguloDouble2.isSelected() == true)
+				cs.getRadion("CalcularAreaTrianguloRectanguloDouble");*/
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(scene);
 			stage.show();
