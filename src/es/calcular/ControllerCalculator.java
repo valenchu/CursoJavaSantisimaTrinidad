@@ -15,7 +15,7 @@ public class ControllerCalculator {
 	public void initialize() {
 
 	}
-
+//VARIABLES PERTENECIENTE A LOS TEXT AREA DE LA SEGUNDA VISTA DONDE SE CALCULA LAS AREAS
 	@FXML
 	private TextArea txtArea;
 
@@ -30,11 +30,11 @@ public class ControllerCalculator {
 
 	@FXML
 	private Button btnCalcularArea;
-
+//METODO CLICK PARA CALCULAR EL AREA DE CUALQUIER RADIO BUTTON ELABORADO
 	@FXML
 	void click(ActionEvent event) {
 		VerificacionesAreas veri = new VerificacionesAreas();
-		
+		//LLAMO AL METODO CREADO EN LA CLASE VERIFICACION DE AREAS PARA CALCULAR LAS AREAS Y VERIFICAR
 		veri.respAreas(radioBt, txtBase, txtAltura, txtArea);
 		System.out.println("holi");
 		

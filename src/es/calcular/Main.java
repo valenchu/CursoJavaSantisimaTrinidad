@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 public class Main extends Application{
 	@Override
 	public void start(Stage view) throws Exception {
+		//LAS VISTAS ESTAN ELABORADAS EN JAVAFX
 		FXMLLoader f = new FXMLLoader(getClass().getResource("\\vistas\\hola.fxml"));
 		Parent root = f.load();
 		Scene scene = new Scene(root);

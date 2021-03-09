@@ -20,6 +20,8 @@ public class Controller {
 
 	}
 
+	// VARIABLES QUE TOMAN POR ETIQUETAS LOS RADIOBUTON DEL JAVAFX
+
 	@FXML
 	private ToggleGroup tg;
 
@@ -30,6 +32,12 @@ public class Controller {
 	public RadioButton rdTriangulo2;
 
 	@FXML
+	private RadioButton rdTrianguloDouble1;
+
+	@FXML
+	private RadioButton rdTrianguloDouble2;
+
+	@FXML
 	private RadioButton rdTrianguloFloat1;
 
 	@FXML
@@ -38,6 +46,7 @@ public class Controller {
 	@FXML
 	private Button btnCalcular;
 
+	// ACCION DEL EVENTO DE BOTON CLICK QUE TOMA LOS RADIO BUTTONS DEL PANEL
 	@FXML
 	void click(ActionEvent event) {
 		FXMLLoader f = new FXMLLoader(getClass().getResource("\\vistas\\Calculos.fxml"));
@@ -46,19 +55,26 @@ public class Controller {
 			root = f.load();
 			Scene scene = new Scene(root);
 			Stage stage = new Stage();
+
+			// LLAMO AL CONTROLADOR DOS DE LA VENTANA PARA PASARLE LOS DATOS DE LOS
+			// RADIOBUTTON QUE MARQUE
 			ControllerCalculator cs = (ControllerCalculator) f.getController();
+			// VERIFICACION BUTTONS INT
 			if (rdTriangulo1.isSelected() == true)
 				cs.getRadion("CalcularAreaTrianguloInt");
 			else if (rdTriangulo2.isSelected() == true)
 				cs.getRadion("CalcularAreaTrianguloRectanguloInt");
+			// VERIFICACION BUTTONS FLOAT
 			else if (rdTrianguloFloat1.isSelected() == true)
 				cs.getRadion("CalcularAreaTrianguloFloat");
 			else if (rdTrianguloFloat2.isSelected() == true)
 				cs.getRadion("CalcularAreaTrianguloRectanguloFloat");
-			/*else if (rdTrianguloDouble1.isSelected() == true)
+			// VERIFICACION BUTTONS DOUBLE
+			else if (rdTrianguloDouble1.isSelected() == true)
 				cs.getRadion("CalcularAreaTrianguloDouble");
 			else if (rdTrianguloDouble2.isSelected() == true)
-				cs.getRadion("CalcularAreaTrianguloRectanguloDouble");*/
+				cs.getRadion("CalcularAreaTrianguloRectanguloDouble");
+
 			stage.initModality(Modality.APPLICATION_MODAL);
 			stage.setScene(scene);
 			stage.show();
