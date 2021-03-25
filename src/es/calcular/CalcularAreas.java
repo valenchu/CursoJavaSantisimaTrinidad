@@ -1,6 +1,7 @@
 package es.calcular;
 
 public class CalcularAreas {
+	public VerificacionesAreas itsVerificacionesAreas;
 	private int b;
 	private int a;
 	private double base;
@@ -23,8 +24,8 @@ public class CalcularAreas {
 		this.alt = alt;
 	}
 
-// METODOS QUE CALCULAN LAS DISTINTAS AREAS SEGUN LO SOLICITADO POR LOS RADIO BUTTONS
-//CALCULO AREAS INTS
+	// METODOS QUE CALCULAN LAS DISTINTAS AREAS SEGUN LO SOLICITADO POR LOS RADIO BUTTONS
+	//CALCULO AREAS INTS
 	public int calcularAreaTInt() {
 		int area = 0;
 		area = b * a;
@@ -37,7 +38,7 @@ public class CalcularAreas {
 		return area;
 	}
 
-//CALCULO AREAS FLOAT
+	//CALCULO AREAS FLOAT
 	public Float calcularAreaTFloat() {
 		Float area = 0f;
 		area = (bas * alt);
@@ -50,7 +51,7 @@ public class CalcularAreas {
 		return area;
 	}
 
-//CALCULO AREAS DOUBLE
+	//CALCULO AREAS DOUBLE
 	public double calcularAreaTDouble() {
 		double area = 0.0;
 		area = base * altura;

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.calcular.Controller">
+   <children>
+      <RadioButton fx:id="rdTriangulo1" layoutX="33.0" layoutY="46.0" mnemonicParsing="false" selected="true" text="Calcular area triangulo">
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdTriangulo2" layoutX="322.0" layoutY="46.0" mnemonicParsing="false" text="Calcular area triangulo rectangulo" toggleGroup="$tg" />
+      <Button fx:id="btnCalcular" layoutX="51.0" layoutY="348.0" mnemonicParsing="false" onAction="#click" text="Calcular" />
+      <RadioButton fx:id="rdTrianguloFloat1" layoutX="33.0" layoutY="96.0" mnemonicParsing="false" text="Calcular area triangulo float" toggleGroup="$tg" />
+      <RadioButton fx:id="rdTrianguloFloat2" layoutX="322.0" layoutY="96.0" mnemonicParsing="false" text="Calcular area triangulo rectangulo float" toggleGroup="$tg" />
+      <RadioButton fx:id="rdTrianguloDouble2" layoutX="322.0" layoutY="145.0" mnemonicParsing="false" text="Calcular area triangulo rectangulo double" toggleGroup="$tg" />
+      <RadioButton fx:id="rdTrianguloDouble1" layoutX="33.0" layoutY="145.0" mnemonicParsing="false" text="Calcular area triangulo double" toggleGroup="$tg" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="14.0" prefHeight="19.0" prefWidth="186.0" text="AREA TRIANGULO" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="12.288000106811523" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="332.0" layoutY="14.0" prefHeight="19.0" prefWidth="233.0" text="AREA TRIANGULO RECTANGULO" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="12.288000106811523" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -16,6 +16,8 @@ import javafx.stage.Stage;
 
 public class Controller {
 
+	public Main itsMain;
+
 	public void initialize() {
 
 	}
@@ -26,10 +28,10 @@ public class Controller {
 	private ToggleGroup tg;
 
 	@FXML
-	public RadioButton rdTriangulo1;
+	private RadioButton rdTriangulo1;
 
 	@FXML
-	public RadioButton rdTriangulo2;
+	private RadioButton rdTriangulo2;
 
 	@FXML
 	private RadioButton rdTrianguloDouble1;
@@ -48,7 +50,7 @@ public class Controller {
 
 	// ACCION DEL EVENTO DE BOTON CLICK QUE TOMA LOS RADIO BUTTONS DEL PANEL
 	@FXML
-	void click(ActionEvent event) {
+	public void click(ActionEvent event) {
 		FXMLLoader f = new FXMLLoader(getClass().getResource("\\vistas\\Calculos.fxml"));
 		Parent root;
 		try {

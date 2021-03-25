@@ -6,6 +6,8 @@ import javafx.scene.control.TextField;
 
 public class VerificacionesAreas {
 
+	public ControllerCalculator itsControllerCalculator;
+
 	public void respAreas(Label radioBt, TextField txtBase, TextField txtAltura, TextArea txtArea) {
 		// VERIFICACION CAMPOS VACIOS
 		if (txtBase.getText().isEmpty() || txtAltura.getText().isEmpty() || txtBase.getText().equals("")
