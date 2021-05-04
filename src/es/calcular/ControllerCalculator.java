@@ -1,5 +1,7 @@
 package es.calcular;
 
+import com.sun.glass.events.KeyEvent;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -35,11 +37,17 @@ public class ControllerCalculator {
 	//METODO CLICK PARA CALCULAR EL AREA DE CUALQUIER RADIO BUTTON ELABORADO
 	@FXML
 	public void click(ActionEvent event) {
+		
 		VerificacionesAreas veri = new VerificacionesAreas();
 		//LLAMO AL METODO CREADO EN LA CLASE VERIFICACION DE AREAS PARA CALCULAR LAS AREAS Y VERIFICAR
 		veri.respAreas(radioBt, txtBase, txtAltura, txtArea);
+		
 		System.out.println("holi");
 
+	}
+	
+	public Button getBtnCalcularArea() {
+		return btnCalcularArea;
 	}
 
 	public void getRadion(String datoArea) {

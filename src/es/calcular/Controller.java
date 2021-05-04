@@ -57,6 +57,7 @@ public class Controller {
 			root = f.load();
 			Scene scene = new Scene(root);
 			Stage stage = new Stage();
+			
 
 			// LLAMO AL CONTROLADOR DOS DE LA VENTANA PARA PASARLE LOS DATOS DE LOS
 			// RADIOBUTTON QUE MARQUE
@@ -78,6 +79,7 @@ public class Controller {
 				cs.getRadion("CalcularAreaTrianguloRectanguloDouble");
 
 			stage.initModality(Modality.APPLICATION_MODAL);
+			stage.setTitle("CALCULOS");
 			stage.setScene(scene);
 			stage.show();
 		} catch (IOException e) {
